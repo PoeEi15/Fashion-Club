@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            .header{
+                display: flex;
+                justify-content:center ;
+                align-items: center;
+                background-color: #fad6e7;
+                padding: 20px 0;
+            }
+            .header img{
+                width: 150px;
+
+            }
+            .header img:hover{
+                scale: 1.1;
+            }
+            .size{
+                background-color:rgb(254, 247, 239) ;
+                display: flex;
+                justify-content: center;
+                padding: 30px;
+               
+            }
+            .size img{
+                width: 400px;
+            }
+            .choose{
+               
+                background-color: #fad6e7;
+                padding: 20px 0;
+            }
+            .choose1{
+                
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .choose5{
+                
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .choose3{
+                opacity: 0;
+                border: #f7b4d3 solid;
+                background-color:rgb(251, 246, 238);
+                padding:15px 30px;
+                
+            }
+            .choose7{
+                opacity: 0;
+                border: #f7b4d3 solid;
+                background-color:rgb(251, 246, 238);
+                padding: 15px 30px;
+            }
+            .choose3.positive{
+                opacity: 100%;
+                border: #f7b4d3 solid;
+                background-color:rgb(251, 246, 238);
+                padding:15px 30px;
+
+            }
+            .choose7.positive{
+                opacity: 100%;
+                border: #f7b4d3 solid;
+                background-color:rgb(251, 246, 238);
+                padding:15px 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>How to Measure Your Size?</h1>
+            <img src="confused1.png" alt="">
+        </div>
+        <div class="size">
+            <img src="size.jpeg.webp" alt="">
+        </div>
+        <div class="choose">
+            <div class="choose1">
+                <div class="choose2">
+                    <h1>For Upper Body Measurement</h1>
+                    <p>Shoulder Measurement</p>
+                    <input type="number" id="number1">
+                    <p>Bust Measurement</p>
+                    <input type="number" id="number2">
+                    <button id="btn1">Click</button>
+                </div>
+                <div class="choose3" id="choose3">
+                    <h1>We recommend you to choose</h1>
+                    <h2 id="sizePrint1"></h2>
+                </div>
+            </div>
+            
+            <div class="choose5">
+                <div class="choose6">
+                    <h1>For Lower Body Measurement</h1>
+                    <p>Waist Measurement</p>
+                    <input type="number" id="number3">
+                    <p>Hips Measurement</p>
+                    <input type="number" id="number4">
+                    <button id="btn2">Click</button>
+                </div>
+                <div class="choose7" id="choose7">
+                    <h1>We recommend you to choose</h1>
+                    <h2 id="sizePrint2"></h2>
+                </div>
+            </div>
+            
+            <script src="project.js"></script>
+        </div>
+    </body>
+</html>
